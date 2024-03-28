@@ -19,7 +19,7 @@ export default function Chat() {
     connectToWs();
   }, [selectedUserId]);
   function connectToWs() {
-    const ws = new WebSocket('wss://weak-jade-stingray-tam.cyclic.app');
+    const ws = new WebSocket('wss://weak-jade-stingray-tam.cyclic.app/');
     setWs(ws);
     ws.addEventListener('message', handleMessage);
     ws.addEventListener('close', () => {
