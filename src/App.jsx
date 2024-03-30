@@ -3,7 +3,7 @@ import {UserContextProvider} from "./UserContext";
 import Routes from "./Routes";
 
 function App() {
-  axios.defaults.baseURL = 'https://weak-jade-stingray-tam.cyclic.app';
+  axios.defaults.baseURL = 'https://mern-chat-api-hc0z.onrender.com';
   axios.defaults.withCredentials = true;
   return (
     <UserContextProvider>
